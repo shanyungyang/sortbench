@@ -1,0 +1,15 @@
+[package]
+name = "sortbench"
+version = "0.1.0"
+authors = ["Shan-Yung Yang <shanyungyang@gmail.com>"]
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+
+[dependencies]
+rand = "0.3"
+rayon = "1.5"
+mersenne_twister = "1.1.1"
